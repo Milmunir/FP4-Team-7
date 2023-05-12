@@ -1,6 +1,6 @@
-# FP2-MyGram by Team-7
+# FP4-MyGram by Team-7
 
-This is repository for MyGram App by Team-7
+The repository is from FP2-Team-7 and in this Final Project 4, we will add integration testing to it.
 
 How to run :
 
