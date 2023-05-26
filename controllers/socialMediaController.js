@@ -48,6 +48,7 @@ class socialMediaController {
         res.status(500).json(error)
       })
   }
+
   static updatesocialmedia(req, res) {
     const { name, social_media_url } = req.body
     const socmedId = req.params.id
@@ -75,6 +76,7 @@ class socialMediaController {
         res.status(500).json(error)
       })
   }
+
   static deletesocialmedia(req, res) {
     let socialMediaId = req.params.id
 

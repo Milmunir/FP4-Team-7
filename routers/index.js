@@ -11,5 +11,12 @@ router.use("/users", userRouter)
 router.use("/photos", photoRouter)
 router.use("/comments", commentRouter)
 router.use("/socialmedias", socialMediaRouter)
+router.use("*", (req, res) => {
+  res.status(404).json({
+    code: 404,
+    name: "Error",
+    msg: "Not found",
+  })
+})
 
 module.exports = router

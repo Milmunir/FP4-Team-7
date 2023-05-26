@@ -12,18 +12,20 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 // Sync database schema
-sequelize
-  .sync()
-  .then(() => {
-    console.log(`Database schema synced`)
-  })
-  .catch((err) => {
-    console.log("Error syncing database schema :", err)
-    process.exit(1)
-  })
+// sequelize
+//   .sync()
+//   .then(() => {
+//     console.log(`Database schema synced`)
+//   })
+//   .catch((err) => {
+//     console.log("Error syncing database schema :", err)
+//     process.exit(1)
+//   })
 
 app.use(router)
 
-app.listen(PORT, () => {
-  console.log(`Server is running on PORT : ${PORT}`)
-})
+// app.listen(PORT, () => {
+//   console.log(`Server is running on PORT : ${PORT}`)
+// })
+
+module.exports = app

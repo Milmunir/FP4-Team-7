@@ -43,6 +43,7 @@ class UserController {
 
       res.status(201).json({
         user: {
+          id: user.id,
           email: user.email,
           full_name: user.full_name,
           profile_image_url: user.profile_image_url,

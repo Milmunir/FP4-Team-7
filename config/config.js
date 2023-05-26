@@ -10,11 +10,12 @@ module.exports = {
     port: process.env.DB_PORT,
   },
   test: {
-    username: "root",
-    password: null,
-    database: "database_test",
-    host: "127.0.0.1",
-    dialect: "mysql",
+    username: process.env.DB_USERNAME_TESTING,
+    password: process.env.DB_PASSWORD_TESTING,
+    database: process.env.DB_DATABASE_TESTING,
+    host: process.env.DB_HOST_TESTING,
+    dialect: process.env.DB_DIALECT_TESTING,
+    port: process.env.DB_PORT,
   },
   production: {
     username: process.env.DB_USERNAME_PRODUCTION,
