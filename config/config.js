@@ -1,4 +1,4 @@
-require("dotenv").config()
+require("dotenv").config();
 
 module.exports = {
   development: {
@@ -6,7 +6,7 @@ module.exports = {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
+    dialect: "postgres",
     port: process.env.DB_PORT,
   },
   test: {
@@ -14,7 +14,7 @@ module.exports = {
     password: process.env.DB_PASSWORD_TESTING,
     database: process.env.DB_DATABASE_TESTING,
     host: process.env.DB_HOST_TESTING,
-    dialect: process.env.DB_DIALECT_TESTING,
+    dialect: "postgres",
     port: process.env.DB_PORT,
   },
   production: {
@@ -31,4 +31,4 @@ module.exports = {
       idle: 10000,
     },
   },
-}
+};
