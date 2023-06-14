@@ -23,7 +23,7 @@ module.exports = {
     database: "railway",
     host: "containers-us-west-32.railway.app",
     dialect: "postgres",
-    port: 6779,,
+    port: 6779,
     pool: {
       max: 5,
       min: 0,
